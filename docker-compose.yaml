@@ -32,7 +32,7 @@ services:
             - ./grafana_provisioning/:/etc/grafana/provisioning
     
     web:
-        image: leopoul/covid19:0.0.2
+        image: techhome/covid-19
         ports:
             - "5000:5000"
         environment:
