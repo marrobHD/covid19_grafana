@@ -1300,6 +1300,110 @@
         "yBucketSize": null
       },
       {
+        "cards": {
+          "cardPadding": 1,
+          "cardRound": null
+        },
+        "color": {
+          "cardColor": "#b4ff00",
+          "colorScale": "sqrt",
+          "colorScheme": "interpolateRdYlGn",
+          "exponent": 0.5,
+          "max": 10,
+          "min": 0,
+          "mode": "spectrum"
+        },
+        "dataFormat": "tsbuckets",
+        "datasource": "InfluxDB",
+        "gridPos": {
+          "h": 18,
+          "w": 24,
+          "x": 0,
+          "y": 25
+        },
+        "heatmap": {},
+        "hideZeroBuckets": false,
+        "highlightCards": true,
+        "id": 13,
+        "legend": {
+          "show": true
+        },
+        "options": {},
+        "pluginVersion": "6.3.5",
+        "reverseYBuckets": true,
+        "targets": [
+          {
+            "alias": "$tag_country",
+            "groupBy": [
+              {
+                "params": [
+                  "24h"
+                ],
+                "type": "time"
+              },
+              {
+                "params": [
+                  "country"
+                ],
+                "type": "tag"
+              },
+              {
+                "params": [
+                  "null"
+                ],
+                "type": "fill"
+              }
+            ],
+            "measurement": "covid19",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "select": [
+              [
+                {
+                  "params": [
+                    "confirmed"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "sum"
+                }
+              ]
+            ],
+            "tags": []
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Confirmed",
+        "tooltip": {
+          "show": true,
+          "showHistogram": false
+        },
+        "tooltipDecimals": 0,
+        "type": "heatmap",
+        "xAxis": {
+          "show": true
+        },
+        "xBucketNumber": null,
+        "xBucketSize": null,
+        "yAxis": {
+          "decimals": 0,
+          "format": "none",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "splitFactor": null
+        },
+        "yBucketBound": "middle",
+        "yBucketNumber": null,
+        "yBucketSize": null
+      },
+      {
         "aliasColors": {},
         "bars": false,
         "dashLength": 10,
