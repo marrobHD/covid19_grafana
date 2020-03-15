@@ -22,6 +22,8 @@ services:
             - covid19
         environment:
             GF_INSTALL_PLUGINS: ${GF_INSTALL_PLUGINS}
+            GF_SECURITY_ADMIN_USER: ${GF_SECURITY_ADMIN_USER}
+            GF_SECURITY_ADMIN_PASSWORD: ${GF_SECURITY_ADMIN_PASSWORD}
             # Enable non-authenticated users to view dashboards (view only).
             GF_AUTH_ANONYMOUS_ENABLED: ${GF_AUTH_ANONYMOUS_ENABLED}
             INFLUX_DB: ${INFLUX_DB}
@@ -33,6 +35,7 @@ services:
     
     web:
         image: techhome/covid-19:latest
+        # build: .
         ports:
             - "5000:5000"
         environment:
