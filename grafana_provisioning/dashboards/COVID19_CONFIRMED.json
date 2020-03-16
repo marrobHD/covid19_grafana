@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 4,
   "links": [],
   "panels": [
     {
@@ -35,7 +34,7 @@
       "dataFormat": "tsbuckets",
       "datasource": "InfluxDB",
       "gridPos": {
-        "h": 33,
+        "h": 36,
         "w": 24,
         "x": 0,
         "y": 0
@@ -47,6 +46,7 @@
       "legend": {
         "show": true
       },
+      "options": {},
       "pluginVersion": "6.3.5",
       "reverseYBuckets": false,
       "targets": [
@@ -150,8 +150,5 @@
   "timezone": "utc",
   "title": "COVID19 Confirmed",
   "uid": "covid19-confirmed",
-  "variables": {
-    "list": []
-  },
   "version": 1
 }
