@@ -12,7 +12,7 @@ git reset --hard origin/master # or to whatever commit you want to go reset to
 
 # git clean -f -d
 
-rm -r .git
+rm -rf .git
 echo "
 # /etc/systemd/system/covid19-app.service
 
