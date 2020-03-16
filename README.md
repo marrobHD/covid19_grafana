@@ -20,7 +20,7 @@ run `mkdir /home/covid19_grafana && cd /home/covid19_grafana && wget -qO- https:
 edit `.env`
 
 ### Step 3
-run ready.sh(`chmod +x ready.sh && ./ready.sh`)
+run ready.sh(`./ready.sh`)
 and visit http://localhost:8001
 
 ## UI
