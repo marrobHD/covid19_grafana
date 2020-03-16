@@ -31,7 +31,6 @@ TimeoutStartSec=0
 WantedBy=multi-user.target
 " >> /etc/systemd/system/covid19-app.service
 
-
 while true; do
     read -p "Do you wish to run COVID19-Grafana now and add autostart?" yn
     case $yn in
@@ -39,6 +38,4 @@ while true; do
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
-done 
-
-
+done
