@@ -30,6 +30,7 @@ TimeoutStartSec=0
 [Install]
 WantedBy=multi-user.target
 " >> /etc/systemd/system/covid19-app.service
+systemctl daemon-reload
 
 while true; do
     read -p "Do you wish to run COVID19-Grafana now and add autostart?" yn
