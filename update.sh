@@ -43,7 +43,7 @@ while true; do
     esac
 done 
 
-
+echo please run the script twice
 
 
 
