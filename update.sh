@@ -14,7 +14,5 @@ git reset --hard origin/master # or to whatever commit you want to go reset to
 
 rm -rf .git
 
-
-
-
-
+chmod +x update.sh
+chmod +x ready.sh
