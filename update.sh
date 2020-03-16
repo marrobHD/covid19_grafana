@@ -16,3 +16,5 @@ rm -rf .git
 
 chmod +x update.sh
 chmod +x ready.sh
+sed -i -e 's/\r$//' update.sh
+sed -i -e 's/\r$//' ready.sh
