@@ -11,18 +11,24 @@ There are 2 endpoints:
 
 To avoid messing with cron in docker, the task of updating influxDB is delegted to http://localhost:5000/refresh . Then the Grafana Ajax plugin hits the endpoint and fills in influxdb. There is a "memory" mechanism in place that prevents frequent requests to ExpDev07's endpoint. Either way the endpoint uses heavy caching and updates seem to be daily.
 
-# Run
-docker-compose up
+## Installation & Configuration
 
-visit
+### Step 1
+run `mkdir /home/covid19_grafana && cd /home/covid19_grafana && wget -qO- https://raw.githubusercontent.com/marrobHD/covid19_grafana/master/update.sh>install.sh && chmod +x install.sh && ./install.sh`
 
-http://localhost:8001
+### Step 2
+edit `.env`
 
-# UI
+### Step 3
+run ready.sh(`chmod +x ready.sh && ./ready.sh`)
+and visit http://localhost:8001
+
+## UI
 Below is the upper and lower part of the dashboard.
 
 ![Grafana 1](media/grafana_1.png)
 ![Grafana 2](media/grafana_2.png)
+![Grafana 3](media/grafana_3.png)
 
-# Condolences and get well soon
+## Condolences and get well soon
 My deepest condolences and prayers to the families of deceased people and a big warm "get well soon" to all confirmed ones!
