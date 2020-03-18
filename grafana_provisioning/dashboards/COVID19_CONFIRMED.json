@@ -48,7 +48,7 @@
       },
       "options": {},
       "pluginVersion": "6.3.5",
-      "reverseYBuckets": false,
+      "reverseYBuckets": true,
       "targets": [
         {
           "alias": "$tag_country",
