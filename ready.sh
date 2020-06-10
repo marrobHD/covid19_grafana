@@ -20,7 +20,7 @@ Requires=docker.service
 After=docker.service
 
 [Service]
-Type=oneshot
+Type=simple
 RemainAfterExit=yes
 WorkingDirectory=/home/covid19_grafana/
 ExecStart=/usr/local/bin/docker-compose up -d
